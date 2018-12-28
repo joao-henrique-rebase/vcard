@@ -362,3 +362,76 @@ Nos links de redes sociais `<a class="footer-icon">`:
   margin-right: 10px; /* Inserir margem na direita de 10 pixels entre os ícones */
 }
 ```
+
+Pronto o conteúdo do arquivo `style.css` deve ter ficado assim:
+
+```css
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-size: 14px;
+  color: #333;
+}
+
+.vcard-body {
+  max-width: 468px;
+  width: 100%;
+  margin: 80px auto;
+  background: #f4f4f4;
+  padding: 45px;
+  border-top: 6px solid #08aeac;
+}
+
+.vcard-profile-img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profile-title {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.profile-title-color {
+  color: #08aeac;
+}
+
+.profile-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vcard-profile-description-text {
+  text-align: center;
+}
+
+.vcard-profile-description-contact {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #08aeac;
+  color:#fff;
+}
+
+.vcard-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-icon {
+  color:#333;
+  font-size: 16px;
+  margin-right: 10px;
+}
+```
+
+Terminamos nosso Cartão de Visitas WEB!!!
