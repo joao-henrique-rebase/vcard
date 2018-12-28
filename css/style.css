@@ -9,20 +9,15 @@ body {
 .vcard-body {
   max-width: 468px;
   width: 100%;
-  margin: 0 auto;
+  margin: 80px auto;
   background: #f4f4f4;
-  margin-top: 80px;
-  margin-bottom: 20px;
   padding: 45px;
   border-top: 6px solid #08aeac;
 }
 
 .vcard-profile-img {
   width: 200px;
-  height: 200px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  position: relative;
 }
 
 .profile-img {

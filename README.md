@@ -196,3 +196,169 @@ Pronto, nosso esqueleto do `VCard` está feito, fácil certo?, o conteúdo a at�
 
 Caso abrirmos no "navegador" o arquivo `index.html`, teremos algo assim:
 ![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/esqueleto-html.png) 
+
+Bom agora que tal colocarmos um estilo no nosso esqueleto maquiar ele e deixar mais apresentável para os nossos futuros clientes que acessarem nosso cartão de visita.
+
+Primeiramente vamos criar nosso arquivo de CSS, então dentro da pasta `css` criaremos um arquivo chamado `style.css` e após isso precisamos importa-lo no nosso HTML, para isso inserimos no nosso cabeçalho `<head></head>` a seguinte linha:
+
+```html
+<link href="css/style.css" rel="stylesheet">
+```
+
+Olhando o Template final, notamos de cara que ele tem uma imagem de fundo e uma fonte diferente, no caso a fonte será `Montserrat`, para isso podemos importá-la também no nosso cabeçalho `<head></head>`:
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+```
+
+Agora sim podemos começar a implementar nosso estilo no arquivo de `CSS`, começando pelo `body`, vamos destacar as customizações que queremos:
+
+- Personalização fonte.
+- Imagem de fundo.
+- Cor do texto cinza escuro.
+
+Então vamos criar os atributos de customização do body, seria algo assim:
+
+```css
+body {
+  font-family: 'Montserrat', sans-serif; /* Atribuir fonte Montserrat e sans-serif como fonte alternativa*/
+  background: url('../images/background.jpg') no-repeat center center fixed; /* Inserir imagem de fundo passando o caminho localizado na pasta de images, centraliza-la e fixa-la ao centro */
+  background-size: cover; /* Imagem preencher todo o espaço do body */
+  font-size: 14px; /* Tamanho de fonte 14 pixels */
+  color: #333; /* Cor de fonte #333 */
+}
+```
+>INFO: para saber Hexadecimais de cores de fontes recomendo o site: [Color Blindness](http://www.color-blindness.com/color-name-hue/)
+
+O corpo do Card na nossa divisão do `VCard`, `<div class="vcard-body">`:
+
+- Borda verde no topo.
+- Fundo claro.
+- Centralizado.
+- Tamanho definido.
+- Espaçamento interno.
+
+```css
+.vcard-body {
+  max-width: 468px; /* Tamanho máximo do card para 468 pixels */
+  width: 100%; /* Tamanho do Card ocupar 100% do espaço da tela respeitando o máximo a cima */
+  margin: 80px auto; /* Centralizar Card horizontalmente e colocando margens no top e bottom de 80px;*/
+  background: #f4f4f4; /* Inserir cor de fundo para o Card*/
+  padding: 45px; /* Inserir espaçamento interno no Card de 45px */
+  border-top: 6px solid #08aeac; /* Inserir borda verde no topo do card de 6 pixels */
+}
+```
+
+Na divisão da imagem de perfil `<div class="vcard-profile-img">`:
+
+- Tamanho definido.
+- Conteudo alinahdo ao centro.
+
+```css
+.vcard-profile-img {
+  width: 200px; /* Tamanho definido a 200 pixels */
+  margin: 0 auto; /* Centralizar conteúdo horizontalmente */
+}
+```
+
+Na imagem de perfil `<img class="profile-img">`:
+
+- Tamanho definido.
+- Imagem arredondada.
+
+```css
+.profile-img {
+  width: 100%; /* Tamanho da imagem ocupar 100% do espaço */
+  border-radius: 100%; /* Arredondar borda da imagem 100% torando-a arredondada */
+}
+```
+
+No texto de apresentação `<h1 class="profile-title">` e no nome `<span class="profile-title-color">`:
+
+- Tamanho da fonte.
+- Espessura da fonte.
+- Alinhamento do texto.
+- Cor do fonte verde no nome.
+
+```css
+.profile-title {
+  margin-bottom: 0; /* Remover margem defult do elemento h1 */
+  text-align: center; /* Alinhar o texto ao centro */
+  font-weight: bold; /* Inserir fonte em negrito */
+  font-size: 30px; /* Alterar tamanho da fonte para 30 pixels */
+}
+```
+
+```css
+.profile-title-color {
+  color: #08aeac; /* Alterar cor de fonte para #08aeac */
+}
+```
+
+No texto da profissão `<h2 class="profile-subtitle">`:
+
+- Tamanho da fonte.
+- Espessura do texto.
+- Alinhamento do texto.
+
+```css
+.profile-subtitle {
+  text-align: center; /* Alinhar o texto ao centro */
+  font-size: 20px; /* Alterar tamanho da fonte para 20 pixels */
+  font-weight: bold; /* Inserir fonte em negrito */
+}
+```
+
+No texto de informação ` <div class="vcard-profile-description-text">`:
+
+- Alinhamento do texto.
+
+```css
+.vcard-profile-description-text {
+  text-align: center; /* Alinhar o texto ao centro */
+}
+```
+
+No texto de meios de contato ` <div class="vcard-profile-description-contact">`:
+
+- Alinhamento do texto.
+- Espaçamento entre o fundo e o texto.
+- Fundo arredondado.
+- Cor de fundo verde.
+- Cor do fonte branco.
+
+```css
+.vcard-profile-description-contact {
+  text-align: center; /* Alinhar o texto ao centro */
+  border-radius: 5px; /* Inserir borda arredondada de 5 pixels */
+  padding: 5px 10px; /* Inserir espaçamento interno de 5 pixels verticalmente e 10 pixels horizontalmente */
+  background: #08aeac; /* Alterar cor do fundo para #08aeac */
+  color:#fff; /* Alterar cor de fonte para #fff */
+} 
+```
+
+Na divisão dos links de redes sociais `<div class="vcard-footer">`:
+
+- Espaçamento ao elemento acima.
+- Alimentendo do texto.
+
+```css
+.vcard-footer {
+  margin-top: 20px; /* Inserir margem no topo de 20 pixels */
+  text-align: center; /* Alinhar o texto ao centro */
+}
+```
+
+Nos links de redes sociais `<a class="footer-icon">`:
+
+- Cor dos ícones
+- tamanho da fonte
+- Espaçamento entre os ícones
+
+```css
+.footer-icon {
+  color:#333; /* Alterar cor de fonte para #333 */
+  font-size: ; /* Alterar tamanho da fonte para 16 pixels */
+  margin-right: 10px; /* Inserir margem na direita de 10 pixels entre os ícones */
+}
+```
