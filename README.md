@@ -4,7 +4,10 @@
 
 Dado um Template em `.PDF` vamos criar recria-lo com nossas próprias informações para um possível carão de visitas WEB.
 
+[Template](https://github.com/JoaoHenriqueVale/vcard/blob/master/v-card.pdf)
+
 Modelo Final do Nosso Cartão:
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/v-card.png) 
 
 Vamos Criar a estrutura de pastas do nosso projeto `vcard`:
 
@@ -192,3 +195,4 @@ Pronto, nosso esqueleto do `VCard` está feito, fácil certo?, o conteúdo a at�
 ```
 
 Caso abrirmos no "navegador" o arquivo `index.html`, teremos algo assim:
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/esqueleto-html.png) 
