@@ -21,6 +21,9 @@ Dentro da nossa pasta raiz `vcard`, criaremos duas pasta para imagens e estilos 
 
 Ainda dentro da raiz `vcard` criaremos nosso arquivo `index.html`
 
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/estrutura.png) 
+
+
 Vamos lá,
 
 Começaremos pela estrutura básica de um HTML:
