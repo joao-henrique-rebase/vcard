@@ -27,15 +27,15 @@ Vamos lá, estrutura básica de qualquer pagina Web.
 </html>
 ```
 
-### `<!DOCTYPE html>` 
+### `<!DOCTYPE html>`
 
-- o doctype avisa aos browsers, robôs de busca, leitores de tela e outras coisas que tipo de documento e aquele que eles estao prestes a carregar, no nosso caso é `HTML`.
+- o doctype avisa aos browsers, robôs de busca, leitores de tela e outras coisas que tipo de documento e aquele que eles estão prestes a carregar, no nosso caso é `HTML`.
 
 ### `<html></html>`
 - o elemento `html` envolve todo o conteúdo da página e às vezes é conhecido como o elemento raiz.
 
 ### `<head></head>`
-- o elemento `<head>` age como um recipiente de tudo o que você deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua página, incluindo coisas como palavras-chave e uma descrição que você quer que apareça nos resultados de busca, CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres e etc...
+- o elemento `<head>` age como um recipiente de tudo o que você deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua página, incluindo coisas como palavra-chaves e uma descrição que você quer que apareça nos resultados de busca, CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres e etc...
 
 ### `<meta charset="utf-8">`
 - esse elemento aponta qual conjunto de caracteres seu documento deve usar para o utf-8.
@@ -101,7 +101,7 @@ Que tal conhecermos as principais `Tags` de marcação do `HTML`
 
 #### `<p> </p>`
 - Paragrafo, um texto.
-- Aceita como atribulo, por exemplo:
+- Aceita como atributo, por exemplo:
   - align – Alinhamento do parágrafo: left, right, center e justify.
 
 
@@ -191,10 +191,10 @@ Que tal conhecermos as principais `Tags` de marcação do `HTML`
 
 
 ### `<img>`
-- Insere uma imagem in-line no documento.
-- Aceita como atribultos, por exemplo:
+- Insere uma imagem on-line no documento.
+- Aceita como atributos, por exemplo:
   - src – O URL da imagem.
-  - alt – Um texto referente ao conteudo da imagem.
+  - alt – Um texto referente ao conteúdo da imagem.
   - height – É a altura da imagem em pixels.
   - width – É a largura da imagem em pixels.
 
@@ -204,7 +204,7 @@ Que tal conhecermos as principais `Tags` de marcação do `HTML`
 
 ### `<table> </table>`
 - Cria uma tabela.
-- Aceita como atribultos, por exemplo:
+- Aceita como atributos, por exemplo:
   - background – Imagem de plano de fundo.
   - bgcolor – Cor de plano de fundo.
   - border – Largura da borda.
@@ -227,33 +227,33 @@ Que tal conhecermos as principais `Tags` de marcação do `HTML`
 
 ### `<form> </form>`
 - Define um formulário.
-- Aceita como atribultos, por exemplo:
+- Aceita como atributos, por exemplo:
   - action – local para onde as informações coletadas no formulário serão enviadas.
   - method – método de empacotamento dos dados do formulário: get, post e enctype="multipart/form-data".
   - name – nome do objeto.
 
 ### `<input>`
 - Caixa de texto ou botão.
-- Aceita como atribultos, por exemplo:
+- Aceita como atributos, por exemplo:
   - type – tipo de dado: text, file, radio, checkbox, hidden, password, submit, reset, button, image.
   - name – nome do objeto.
   - value – valor do objeto.
 
 ### `<textarea> </textarea>`
 - Caixa de texto.
-- Aceita como atribultos, por exemplo:
+- Aceita como atributos, por exemplo:
   - rows – Tamanho da linha da caixa de texto.
   - cols – Tamanho da coluna da caixa de texto.
   - name – nome do objeto.
 
 ### `<select> </select>`
 - Caixa de seleção.
-- Aceita como atribulto, por exemplo:
+- Aceita como atributo, por exemplo:
   - name – Identificador.
 
 ### `<option> </option>`
 - Opção da caixa de seleção.
-- Aceita como atribulto, por exemplo:
+- Aceita como atributo, por exemplo:
   - value – valor do objeto.
 
 
@@ -272,16 +272,16 @@ Que tal conhecermos as principais `Atributos` do `CSS`:
 ## Background-color:    
 Especifica a cor, com seu nome ou seu valor.
 
-**Exemplo:** `background-color: #000055;` 
+**Exemplo:** `background-color: #000055;`
 
 
 ## background-image:
-Espeficida o url da imagem de plano de fundo.
+Especifica o url da imagem de plano de fundo.
 
 **Exemplo:** `background-image: url(http://www.site.com/logo.png)`
 
 
-## border: 
+## border:
 Define a largura, estilo e cor de todas as quatro bordas (ordem: top, right, bottom, left).
 
 **Exemplo:** `border: 1px solid #eee;`
@@ -293,73 +293,73 @@ Especifica a cor do texto.
 **Exemplo:** `color: #333;`
 
 
-## cursor: 
+## cursor:
 Define o tipo do ponteiro/cursor do mouse.
 
 **Exemplo:** `cursor: pointer;`
 
 
-## height: 
+## height:
 Especifica a altura de um elemento.
 
 **Exemplo:** `height: 30px;`
 
 
-## width: 
+## width:
 Especifica a largura de um elemento.
 
 **Exemplo:** `width: 30px;`
 
 
-## font-family: 
+## font-family:
 Estabelece os tipos de fonte que serão utilizados no elemento.
 
 **Exemplo:** `font-family: 'Montserrat', sans-serif;`
 
 
-## font-size: 
+## font-size:
 Determina o tamanho da fonte.
 
 **Exemplo:** `font-size: 14px;`
 
 
-## font-weight: 
+## font-weight:
 Especifica quão grossa é a fonte, caso o estilo bold seja ativado.
 
 **Exemplo:** `font-weight: bold;`
 
 
-## display: 
+## display:
 Determina se um elemento estará visível e reserva um espaço para o mesmo ou não.
 
 **Exemplo:** `display: none;`
 
 
-## top: 
+## top:
 Determina a posição superior do elemento.
 
 **Exemplo:** `top: 10%;`
 
 
-## right: 
+## right:
 Especifica a posição direita de um elemento.
 
 **Exemplo:** `right: 10%;`
 
 
-## left: 
+## left:
 Especifica a posição esquerda de um elemento.
 
 **Exemplo:** `left: 10%;`
 
 
-## bottom: 
+## bottom:
 Especifica a posição abaixo de um elemento.
 
 **Exemplo:** `bottom: 10%;`
 
 
-## margin: 
+## margin:
 Especifica o tamanho da margem de um elemento em todos os lados (ordem: top, right, bottom, left).
 
 **Exemplo:** `margin: 10px 20px; 10px 20px;`
@@ -371,13 +371,13 @@ Estabelece um espaço interno em torno de um elemento em todos os lados (ordem: 
 **Exemplo:** `padding: 10px 20px; 10px 20px;`
 
 
-## position: 
+## position:
 Determina como o elemento está posicionado na página.
 
 **Exemplo:** `position: absolute;`
 
 
-## float: 
+## float:
 Determina com o elemento flutuará na página.
 
 **Exemplo:** `float: left;`
@@ -389,20 +389,19 @@ Especifica o alinhamento do texto.
 **Exemplo:** `text-align: center;`
 
 
-## text-decoration: 
+## text-decoration:
 Especifica um tipo de decoração para o texto.
 
 **Exemplo:** `text-decoration: none;`
 
 
-## visibility: 
+## visibility:
 Especifica se o elemento estará visível.
 
 **Exemplo:** `visibility: hidden;`
 
 
-## z-index: 
-número Estabelece a posição do elemento em uma pilha, se está por cima ou por baixo de outros elementos.
+## z-index:
+Número estabelece a posição do elemento em uma pilha, se está por cima ou por baixo de outros elementos.
 
 **Exemplo:** `z-index: 1`
-

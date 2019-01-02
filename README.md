@@ -2,12 +2,12 @@
 
 ## Projeto Cartão de Visitas
 
-Dado um Template em `.PDF` vamos criar recria-lo com nossas próprias informações para um possível carão de visitas WEB.
+Dado um Template em `.PDF` vamos criar recria-lo com nossas próprias informações para um possível cartão de visitas WEB.
 
 [Template](https://github.com/JoaoHenriqueVale/vcard/blob/master/v-card.pdf)
 
 Modelo Final do Nosso Cartão:
-![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/v-card.png) 
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/v-card.png)
 
 Vamos Criar a estrutura de pastas do nosso projeto `vcard`:
 
@@ -21,7 +21,7 @@ Dentro da nossa pasta raiz `vcard`, criaremos duas pasta para imagens e estilos 
 
 Ainda dentro da raiz `vcard` criaremos nosso arquivo `index.html`
 
-![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/estrutura.png) 
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/estrutura.png)
 
 
 Vamos lá,
@@ -53,7 +53,7 @@ Dentro do nosso `<body></body>`, vamos criar uma sessão `<section></section>` p
 ...
 ```
 
-Olhando para o Template do `Vcard` vamos começar de cima para baixo, e criar uma divisão `<div></div>` para o "corpo" do `Vcard` em si, dentro da sessão, vamos dar um classe para ela já, chama-la de `vcard-body`:
+Olhando para o Template do `Vcard` vamos começar de cima para baixo, e criar uma divisão `<div></div>` para o "corpo" do `Vcard` em si, dentro da sessão, vamos dar uma classe para ela já, chama-la de `vcard-body`:
 
 ```
 ...
@@ -79,9 +79,9 @@ Para importar a imagem, vamos colocar o caminho da foto de perfil localizada na 
 ...
 ```
 
-Partindo para os textos do `VCard` podemos criar uma divisão `<div></div>` para ela, e começar a implementar os titulos `<h1></h1>` e subtiulos `<h2></h2>` no caso "texo de apresentação" e "profisão", lembrando que no "texo de apresentação" vamos tratar "nome" de forma diferenciada podemos criar uma marcação `<span></span>` para isso, lembrando de sempre colcoar nomes descritivos para as "classes" das `TAGS` que vamos customizar.
+Partindo para os textos do `VCard` podemos criar uma divisão `<div></div>` para ela, e começar a implementar os títulos `<h1></h1>` e subtitulos `<h2></h2>` no caso "texto de apresentação" e "profissão", lembrando que no "texo de apresentação" vamos tratar "nome" de forma diferenciada podemos criar uma marcação `<span></span>` para isso, lembrando de sempre colocar nomes descritivos para as "classes" das `TAGS` que vamos customizar.
 
-Vamor inserir tambem uma regua de marcação `<hr>`, após os titulos, para o texto descritivo do card:
+Vamos inserir também uma régua de marcação `<hr>`, após os títulos, para o texto descritivo do card:
 
 ```
 ...
@@ -94,14 +94,14 @@ Vamor inserir tambem uma regua de marcação `<hr>`, após os titulos, para o te
 ...
 ```
 
-Ainda dentro da divisão de descrição `<div class="vcard-profile-description">`, vamos inserir uma divisão `<div></div>` para os textos `<p></p>` de informação do nosso card, contanto um pouco da nossa experiencia.
+Ainda dentro da divisão de descrição `<div class="vcard-profile-description">`, vamos inserir uma divisão `<div></div>` para os textos `<p></p>` de informação do nosso card, contanto um pouco da nossa experiência.
 Vamos chamar a classe divisão de `vcard-profile-description-text`
 ```
 <div class="vcard-profile-description">
   ...
   <div class="vcard-profile-description-text">
     <p>
-      Desenvolver Web a 5 anos, experiência em Ruby on Rails, PHP e VUE.JS,
+      Desenvolver Web a 6 anos, experiência em Ruby on Rails, PHP e VUE.JS,
       Residindo em São Paulo e Músico nas horas vagas.
     </p>
   </div>
@@ -109,7 +109,7 @@ Vamos chamar a classe divisão de `vcard-profile-description-text`
 </div>
 ```
 
-Agora vamos destacar uma divisão `<div></div>` de texto `<p></p>` para os nosso meios de contato ainda dentro da `<div class="vcard-profile-description">` , vamos chamar a classe de `vcard-profile-description-contact`
+Agora vamos destacar uma divisão `<div></div>` de texto `<p></p>` para os nosso meios de contatos ainda dentro da `<div class="vcard-profile-description">` , vamos chamar a classe de `vcard-profile-description-contact`
 
 ```
 ...
@@ -121,7 +121,7 @@ Agora vamos destacar uma divisão `<div></div>` de texto `<p></p>` para os nosso
 
 E por fim vamos criar uma nova divisão `<div></div>` para o rodapé contendo os links `<a></a>` das nossas redes sociais, isso fora da "divisão de descrição", podemos chamar a classe de `vcard-footer`
 
-O Conteudo de cada Link será um icone de uma rede social, para isso podemos recorrer ao [Font Awesome](https://fontawesome.com/) a um site bem legal cheio de ícones vetoriais e logotipos:
+O conteúdo de cada Link será um ícone de uma rede social, para isso podemos recorrer ao [Font Awesome](https://fontawesome.com/) a um site bem legal cheio de ícones vetoriais e logotipos:
 
 Para integra-lo ao nosso projeto bastas importar no Cabeçalho `<head></head>` do nosso HTML
 a seguinte linha:
@@ -132,7 +132,7 @@ a seguinte linha:
 Para saber mais:
 https://fontawesome.com/start
 
-ficando assim:
+Ficando assim:
 
 ```
 <head>
@@ -198,9 +198,9 @@ Pronto, nosso esqueleto do `VCard` está feito, fácil certo?, o conteúdo a at�
 ```
 
 Caso abrirmos no "navegador" o arquivo `index.html`, teremos algo assim:
-![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/esqueleto-html.png) 
+![](https://raw.githubusercontent.com/JoaoHenriqueVale/vcard/master/preview/esqueleto-html.png)
 
-Bom agora que tal colocarmos um estilo no nosso esqueleto maquiar ele e deixar mais apresentável para os nossos futuros clientes que acessarem nosso cartão de visita.
+Bom, agora que tal colocarmos um estilo no nosso esqueleto maquiar ele e deixar mais apresentável para os nossos futuros clientes que acessarem nosso cartão de visita.
 
 Primeiramente vamos criar nosso arquivo de CSS, então dentro da pasta `css` criaremos um arquivo chamado `style.css` e após isso precisamos importa-lo no nosso HTML, para isso inserimos no nosso cabeçalho `<head></head>` a seguinte linha:
 
@@ -208,7 +208,7 @@ Primeiramente vamos criar nosso arquivo de CSS, então dentro da pasta `css` cri
 <link href="css/style.css" rel="stylesheet">
 ```
 
-Olhando o Template final, notamos de cara que ele tem uma imagem de fundo e uma fonte diferente, no caso a fonte será `Montserrat`, para isso podemos importá-la também no nosso cabeçalho `<head></head>`:
+Olhando o Template final, notamos de cara que ele tem uma imagem de fundo e uma fonte diferente, no caso a fonte será `Montserrat`, para isso podemos importa-lo também no nosso cabeçalho `<head></head>`:
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -255,7 +255,7 @@ O corpo do Card na nossa divisão do `VCard`, `<div class="vcard-body">`:
 Na divisão da imagem de perfil `<div class="vcard-profile-img">`:
 
 - Tamanho definido.
-- Conteudo alinahdo ao centro.
+- Conteúdo alinhado ao centro.
 
 ```css
 .vcard-profile-img {
@@ -337,13 +337,13 @@ No texto de meios de contato ` <div class="vcard-profile-description-contact">`:
   padding: 5px 10px; /* Inserir espaçamento interno de 5 pixels verticalmente e 10 pixels horizontalmente */
   background: #08aeac; /* Alterar cor do fundo para #08aeac */
   color:#fff; /* Alterar cor de fonte para #fff */
-} 
+}
 ```
 
 Na divisão dos links de redes sociais `<div class="vcard-footer">`:
 
 - Espaçamento ao elemento acima.
-- Alimentendo do texto.
+- Alinhamento do texto.
 
 ```css
 .vcard-footer {
@@ -355,7 +355,7 @@ Na divisão dos links de redes sociais `<div class="vcard-footer">`:
 Nos links de redes sociais `<a class="footer-icon">`:
 
 - Cor dos ícones
-- tamanho da fonte
+- Tamanho da fonte
 - Espaçamento entre os ícones
 
 ```css
